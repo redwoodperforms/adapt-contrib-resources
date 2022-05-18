@@ -14,7 +14,8 @@ export default class ResourcesView extends Backbone.View {
 
   events() {
     return {
-      'click .js-resources-filter-btn-click': 'onFilterClicked'
+      'click .js-resources-filter-btn-click': 'onFilterClicked',
+      'click .resources-item-open': 'onOpenResource'
     };
   }
 
@@ -32,8 +33,6 @@ export default class ResourcesView extends Backbone.View {
   }
 
   onFilterClicked(e) {
-    if (e && e.preventDefault) e.preventDefault();
-
     this.$('.js-resources-filter-btn-click').removeClass('is-selected');
 
     let items;
@@ -50,4 +49,17 @@ export default class ResourcesView extends Backbone.View {
     if (items.length < 0) return;
     a11y.focusFirst($(items[0]));
   }
+  onOpenResource(evt) {
+    var resourceLink = $(evt.currentTarget).attr("data-resource-link");
+    if ($(evt.currentTarget).data("shouldopeninpopup")) {
+      this.popupWindow(resourceLink, '_blank', window, '600', '500');
+    }
+  }
+  popupWindow(url, windowName, win, w, h) {
+    const y = win.top.outerHeight / 2 + win.top.screenY - (h / 2);
+    const x = win.top.outerWidth / 2 + win.top.screenX - (w / 2);
+    return win.open(url, windowName, `toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=${w}, height=${h}, top=${y}, left=${x}`);
+  }
+
+
 }
