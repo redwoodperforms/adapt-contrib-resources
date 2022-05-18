@@ -100,6 +100,14 @@
                       "inputType": "Text",
                       "validators": [],
                       "translatable": true
+                    },
+                    "popup":{
+                          "type": "string",
+                      "default": "Popup",
+                      "title": "",
+                      "inputType": "Text",
+                      "validators": [],
+                      "translatable": true
                     }
                   }
                 },
@@ -131,14 +139,22 @@
                       "validators": [],
                       "translatable": true
                     },
-                    "linkAria": {
-                      "type": "string",
-                      "default": "View resource links",
-                      "title": "Links",
-                      "inputType": "Text",
-                      "validators": [],
-                      "translatable": true
-                    }
+                  "linkAria": {
+                    "type": "string",
+                    "default": "View resource links",
+                    "title": "Links",
+                    "inputType": "Text",
+                    "validators": [],
+                    "translatable": true
+                  },
+                    "popupAria": {
+                    "type": "string",
+                    "default": "View Popup window",
+                    "title": "Popup",
+                    "inputType": "Text",
+                    "validators": [],
+                    "translatable": true
+                  }
                   }
                 },
                 "_resourcesItems": {
@@ -181,6 +197,15 @@
                         "translatable": true,
                         "help": "Used to set the name of the downloaded file to something different to the source filename. Only supported in browsers that support the 'download' attribute and for resources that are part of the course content/hosted on the same URL. Forces the file to be downloaded regardless of what 'Force download' is set to."
                       },
+                          "_shouldOpenInPopup":{
+                            "type":"boolean",
+                            "required":false,
+                            "title":"Should Open In Popup",
+                            "default":false,
+                            "translatable":false,
+                            "validators":[]
+                          },
+
                       "description": {
                         "type": "string",
                         "required": false,

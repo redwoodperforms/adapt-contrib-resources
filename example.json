@@ -1,44 +1,49 @@
     // To go in the course.json file
     "_resources": {
         "_isEnabled": true,
-        "_drawerOrder": 1,
         "title": "Resources",
-        "description": "Select here to view resources for this course",
+        "description": "View resources for this course by clicking here.",
         "_filterButtons": {
             "all": "All",
-            "document": "PDF",
+            "document": "Document",
             "media": "Media",
-            "link": "Link"
+            "link": "Link",
+            "popup": "Popup"
         },
-        "_comment": "_filterAria is to provide accessibility support for assistive technologies",
         "_filterAria": {
             "allAria": "View all resources",
             "documentAria": "View document resources",
             "mediaAria": "View media resources",
-            "linkAria": "View resource links"
+            "linkAria": "View resource links",
+            "popupAria": "View popup window"
         },
         "_resourcesItems": [
             {
                 "_type": "document",
-                "title": "Button idea",
-                "description": "Select here to see a proposed button idea",
-                "_link": "course/en/pdf/adapt-framework-prototypes-buttons.pdf",
-                "filename": "Buttons.pdf",
-                "_forceDownload": true
-            },
-            {
-                "_type": "media",
-                "title": "Adapt Learning YouTube Channel",
-                "description": "Fancy catching up on some Adapt material",
-                "_link": "https://www.youtube.com/channel/UCW8SlSFuCc--B66Gf9fAEcQ",
-                "_forceDownload": false
+                "title": "Vanilla Theme Swatch -1",
+                "_shouldOpenInPopup": false,
+                "description": "See the swatch for the vanilla theme by clicking here.",
+                "_link": "course/en/images/vanilla-swatch.jpg"
             },
             {
                 "_type": "link",
-                "title": "Community Site",
-                "description": "Select here to view our community site",
-                "_link": "https://community.adaptlearning.org",
-                "_forceDownload": false
+                "title": "Adapt Learning YouTube Channel-11",
+                "_shouldOpenInPopup": false,
+                "description": "Fancy catching up on some Adapt material? Click here.",
+                "_link": "https://www.youtube.com/channel/UCW8SlSFuCc--B66Gf9fAEcQ"
+            },
+            {
+                "_type": "link",
+                "title": "Adapt Project Site-111",
+                "description": "View the project's web site by clicking here.",
+                "_link": "https://www.adaptlearning.org/"
+            },
+            {
+                "_type": "link",
+                "_shouldOpenInPopup": false,
+                "title": "Framework chat-11111",
+                "description": "Join the framework chat room by clicking here.",
+                "_link": "https://gitter.im/adaptlearning/adapt_framework"
             }
         ]
-    }
+    },
