@@ -34,9 +34,15 @@ The attributes listed below are used in *course.json* to configure **Resources**
 
 >**\_drawerOrder** (number): Determines the order in which this extension appears as a drawer item. Acceptable values are numbers.
 
->**title** (string): This text is displayed (along with the **description**) in the [Drawer](https://github.com/adaptlearning/adapt_framework/wiki/Core-modules#drawer) as part of a button that gives access to the resources.
+>**title** (string): This text is displayed (along with the **description**) in the [Drawer](https://github.com/adaptlearning/adapt_framework/wiki/Core-modules#drawer) as part of a button that gives access to the resources. This property only shows when more than one extension is using the drawer.
 
->**description** (string): This text is displayed (along with the **title**) in the [Drawer](https://github.com/adaptlearning/adapt_framework/wiki/Core-modules#drawer) as part of a button that gives access to the resources.
+>**description** (string): This text is displayed (along with the **title**) in the [Drawer](https://github.com/adaptlearning/adapt_framework/wiki/Core-modules#drawer) as part of a button that gives access to the resources. This property only shows when more than one extension is using the drawer.
+
+>**displayTitle** (string): The title for the resources which displays at the top of the resources drawer.
+
+>**body** (string): The body text for the resources which displays at the top of the resources drawer.
+
+>**instruction** (string): The instruction text for the resources which displays at the top of the resources drawer.
 
 >**\_filterButtons** (object):  This attribute group maintains the labels for the four buttons that filter resources by type. It contains values for **all**, **document**, **media**, and **link**.
 
@@ -62,7 +68,7 @@ The attributes listed below are used in *course.json* to configure **Resources**
 
 >**\_resourcesItems** (object):  This object stores properties for each resource item. Multiple resource items may be created. Each contains values for **\_type**, **title**, **description** (optional), **\_link**, **filename** and **\_forceDownload**.
 
->>**\_type** (string):  This text is used to filter resources. If the resource is to be returned in a filtered group, this value must be one of the following: `document`, `media`, or `link`. (Note: There is no file type validation as part of **Resources**.)
+>>**\_type** (string):  This text is used to filter resources. If the resource is to be returned in a filtered group, this value must be one of the following: `document`, `media`, `link`, or one of the ten custom types (ex. `custom1`, `custom2`). (Note: There is no file type validation as part of **Resources**.)
 
 >>**title** (string):  This text appears (along with **description**) as a label on the button that links to the item.
 
@@ -81,9 +87,8 @@ The attributes listed below are used in *course.json* to configure **Resources**
 No known limitations.
 
 ----------------------------
-**Version number:**  5.0.0   <a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="adapt learning logo" align="right"></a>
-**Framework versions:**  5.19.1+
-**Author / maintainer:** Adapt Core Team with [contributors](https://github.com/adaptlearning/adapt-contrib-resources/graphs/contributors)
-**Accessibility support:** WAI AA
-**RTL support:** Yes
-**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge, IE11, Safari 12+13 for macOS/iOS/iPadOS, Opera
+<a href="https://community.adaptlearning.org/" target="_blank"><img src="https://github.com/adaptlearning/documentation/blob/master/04_wiki_assets/plug-ins/images/adapt-logo-mrgn-lft.jpg" alt="Adapt Learning logo" align="right"></a>
+**Author / maintainer:** Adapt Core Team with [contributors](https://github.com/adaptlearning/adapt-contrib-resources/graphs/contributors)<br>
+**Accessibility support:** WAI AA<br>
+**RTL support:** Yes<br>
+**Cross-platform coverage:** Chrome, Chrome for Android, Firefox (ESR + latest version), Edge, IE11, Safari 12+13 for macOS/iOS/iPadOS, Opera<br>

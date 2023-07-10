@@ -12,16 +12,31 @@
           "type": "object",
           "default": {},
           "properties": {
-            "_resources": {
+            "_extensions": {
               "type": "object",
               "default": {},
               "properties": {
-                "resources": {
-                  "type": "string",
+                "_resources": {
+                  "type": "object",
                   "title": "Resources",
-                  "default": "Additional resources.",
-                  "_adapt": {
-                    "translatable": true
+                  "default": {},
+                  "properties": {
+                    "ariaRegion": {
+                      "type": "string",
+                      "title": "Resources: ARIA region",
+                      "default": "",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    },
+                    "resources": {
+                      "type": "string",
+                      "title": "Resources",
+                      "default": "Additional resources.",
+                      "_adapt": {
+                        "translatable": true
+                      }
+                    }
                   }
                 }
               }
@@ -52,6 +67,7 @@
               "type": "string",
               "title": "Title",
               "default": "Resources",
+              "description": "The title for the resources button which displays when more than one extension is using the drawer.",
               "_adapt": {
                 "translatable": true
               }
@@ -60,6 +76,34 @@
               "type": "string",
               "title": "Description",
               "default": "Select here to view resources for this course",
+              "description": "The description text for the resources button which displays when more than one extension is using the drawer.",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "displayTitle": {
+              "type": "string",
+              "title": "Display title",
+              "default": "",
+              "description": "The title for the resources which displays at the top of the resources drawer.",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "body": {
+              "type": "string",
+              "title": "Body",
+              "default": "",
+              "description": "The body text for the resources which displays at the top of the resources drawer.",
+              "_adapt": {
+                "translatable": true
+              }
+            },
+            "instruction": {
+              "type": "string",
+              "title": "Instruction",
+              "default": "",
+              "description": "The instruction text for the resources which displays at the top of the resources drawer.",
               "_adapt": {
                 "translatable": true
               }
@@ -100,6 +144,86 @@
                   "_adapt": {
                     "translatable": true
                   }
+                },
+                "custom1": {
+                  "type": "string",
+                  "title": "Custom type 1",
+                  "default": "Custom type 1",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom2": {
+                  "type": "string",
+                  "title": "Custom type 2",
+                  "default": "Custom type 2",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom3": {
+                  "type": "string",
+                  "title": "Custom type 3",
+                  "default": "Custom type 3",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom4": {
+                  "type": "string",
+                  "title": "Custom type 4",
+                  "default": "Custom type 4",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom5": {
+                  "type": "string",
+                  "title": "Custom type 5",
+                  "default": "Custom type 5",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom6": {
+                  "type": "string",
+                  "title": "Custom type 6",
+                  "default": "Custom type 6",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom7": {
+                  "type": "string",
+                  "title": "Custom type 7",
+                  "default": "Custom type 7",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom8": {
+                  "type": "string",
+                  "title": "Custom type 8",
+                  "default": "Custom type 8",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom9": {
+                  "type": "string",
+                  "title": "Custom type 9",
+                  "default": "Custom type 9",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom10": {
+                  "type": "string",
+                  "title": "Custom type 10",
+                  "default": "Custom type 10",
+                  "_adapt": {
+                    "translatable": true
+                  }
                 }
               }
             },
@@ -136,6 +260,86 @@
                   "type": "string",
                   "title": "Links",
                   "default": "View resource links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom1Aria": {
+                  "type": "string",
+                  "title": "Custom type 1",
+                  "default": "View custom type 1 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom2Aria": {
+                  "type": "string",
+                  "title": "Custom type 2",
+                  "default": "View custom type 2 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom3Aria": {
+                  "type": "string",
+                  "title": "Custom type 3",
+                  "default": "View custom type 3 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom4Aria": {
+                  "type": "string",
+                  "title": "Custom type 4",
+                  "default": "View custom type 4 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom5Aria": {
+                  "type": "string",
+                  "title": "Custom type 5",
+                  "default": "View custom type 5 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom6Aria": {
+                  "type": "string",
+                  "title": "Custom type 6",
+                  "default": "View custom type 6 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom7Aria": {
+                  "type": "string",
+                  "title": "Custom type 7",
+                  "default": "View custom type 7 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom8Aria": {
+                  "type": "string",
+                  "title": "Custom type 8",
+                  "default": "View custom type 8 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom9Aria": {
+                  "type": "string",
+                  "title": "Custom type 9",
+                  "default": "View custom type 9 links",
+                  "_adapt": {
+                    "translatable": true
+                  }
+                },
+                "custom10Aria": {
+                  "type": "string",
+                  "title": "Custom type 10",
+                  "default": "View custom type 10 links",
                   "_adapt": {
                     "translatable": true
                   }
@@ -193,6 +397,11 @@
                     "isObjectId": true,
                     "title": "Source",
                     "_backboneForms": "Asset"
+                  },
+                  "_isGlobal": {
+                    "type": "boolean",
+                    "title": "Is displayed on every page",
+                    "default": true
                   }
                 }
               }
